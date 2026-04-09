@@ -108,4 +108,78 @@
  *             - Data Science
  *           example: Programming
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Teacher:
+ *       type: object
+ *       description: Representa un docente del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - lastName
+ *         - specialty
+ *         - experience
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Andres
+ *         lastName:
+ *           type: string
+ *           example: Rojas
+ *         specialty:
+ *           type: string
+ *           enum:
+ *             - Software
+ *             - Redes
+ *             - Seguridad
+ *             - Datos
+ *             - UX
+ *           example: Software
+ *         experience:
+ *           type: number
+ *           example: 8
+ */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Subject:
+ *       type: object
+ *       description: Representa una asignatura del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - area
+ *         - credits
+ *         - semester
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Arquitectura de Software
+ *         area:
+ *           type: string
+ *           enum:
+ *             - Programacion
+ *             - Datos
+ *             - Redes
+ *             - Gestion
+ *             - Diseno
+ *           example: Programacion
+ *         credits:
+ *           type: number
+ *           example: 4
+ *         semester:
+ *           type: number
+ *           example: 6
+ */
 export {};

@@ -35,7 +35,9 @@ describe('App', () => {
       navLinks: [
         { text: 'Usuarios', url: '/users' },
         { text: 'Productos', url: '/products' },
-        { text: 'Cursos', url: '/courses' }
+        { text: 'Cursos', url: '/courses' },
+        { text: 'Docentes', url: '/teachers' },
+        { text: 'Asignaturas', url: '/subjects' }
       ]
     });
   });

@@ -1,0 +1,27 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Nombre</th>
+			<th scope="col">Apellido</th>
+			<th scope="col">Especialidad</th>
+			<th scope="col">Experiencia</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (teacher of teachers; track teacher) {
+			<tr>
+				<th scope="row">{{ teacher.id }}</th>
+				<td>{{ teacher.name }}</td>
+				<td>{{ teacher.lastName }}</td>
+				<td>
+					<dsb-badge-atom
+						[text]="teacher.specialty"
+						[type]="specialtyMap[teacher.specialty]" >
+                    </dsb-badge-atom>
+				</td>
+				<td>{{ teacher.experience }}</td>
+			</tr>
+		}
+	</tbody>
+</table>
