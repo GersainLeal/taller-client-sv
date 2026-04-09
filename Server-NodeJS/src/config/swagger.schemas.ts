@@ -71,4 +71,41 @@
  *           type: number
  *           example: 4500
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Course:
+ *       type: object
+ *       description: Representa un curso del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - instructor
+ *         - duration
+ *         - category
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Angular Avanzado
+ *         instructor:
+ *           type: string
+ *           example: John Doe
+ *         duration:
+ *           type: number
+ *           example: 40
+ *         category:
+ *           type: string
+ *           enum:
+ *             - Programming
+ *             - Design
+ *             - Business
+ *             - Marketing
+ *             - Data Science
+ *           example: Programming
+ */
 export {};
